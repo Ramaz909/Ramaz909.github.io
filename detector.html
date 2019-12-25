@@ -1,0 +1,84 @@
+<html>
+<head> <title>Решение квадратного уравнения.</title>
+    <link rel="stylesheet" type="text/css" href="css/styleCalculator.css">
+</head>
+<body>
+	<header class="header">
+		<div class="header_logo">
+			<a href="file:///D:/%D0%BA%D0%BE%D0%B4/index.html"> <img src="img\stalker.png" height = 120px; > </a>
+		 </div>
+		 <nav class="headerMenu we">
+			 <ul> 
+				 
+				<li><a href="file:///D:/%D0%BA%D0%BE%D0%B4/index.html" style ="color: black"> <b>Главная</b></a></li>
+				
+				<li><a href="anomaly bubble.html" style="color: rgb(0, 0, 0);"><b>Аномалия-Пузырь</b></a></li>
+			
+			 </ul>
+		 </nav>
+		</nav>
+		<div class="header_phone we" >
+			<a href="tel:+78005553535"><b>+7 (800) 555 35 35</b></a>
+		</div>
+		
+		   </header>
+    <script language="javascript">
+		<!--
+		function square_equation() {
+		  let a = document.square.square_a.value;
+		  let b = document.square.square_b.value;
+		  let c = document.square.square_c.value;
+		  let sol = document.getElementById("square_sol");
+		
+		  var d = b*b - 4*a*c;
+		  if ( d < 0 ) {
+			string = "<br>x<sub>1</sub> = (";  //пара комплексно-сопряженных корней//
+			string += - b/(2*a);
+			string += ", ";
+			string += Math.sqrt(-d)/(2*a);
+			string += "), x<sub>2</sub> = (";
+			string += - b/(2*a);
+			string += ", ";
+			string += - Math.sqrt(-d)/(2*a);
+			string += ").";
+		  } else {
+			  if ( d == 0 ) {
+				string = "<br>x<sub>1</sub> = x<sub>2</sub> = "; //два одинаковых вещественных корня//
+				string += -b/(2*a);
+				string += ".";
+			  } else {
+				string = "<br>x<sub>1</sub> = "; //два различных вещественных корня//
+				string += -b/(2*a) - Math.sqrt(d)/(2*a);
+				string += ", x<sub>2</sub> = ";
+				string += -b/(2*a) + Math.sqrt(d)/(2*a);
+				string += ".";
+			  }
+		  }
+		  sol.innerHTML = string;
+		}
+		-->
+		</script>
+    <div align ="center">
+		<p class = " tit"><b>Нахождение артефакта a&middot;x&sup2; + b&middot;x + c = 0.</b></p>
+		<p class = " tit"><b>Введите числа в детектор</b></p>
+    <form name="square" action="javascript:square_equation()">
+     <p class = "a"><input name="square_a" type="text" value=" " size="5">&middot;x&sup2+
+                    <input name="square_b" type="text" value=" " size="5">&middot;x+
+					<input name="square_c" type="text" value=" " size="5">= 0.
+	</p>
+     <input type="image" src="img/wwww.gif"
+alt="Кнопка с ссылкой на сервер"
+width="200"
+height="200"
+onmousedown="src='img/wwww.gif'"
+onmouseover="src='img/wwww.gif'"
+onmouseout="src='img/wwww.gif'"
+onmouseup="src='img/wwww.gif'"
+onclick="LoadServ()">
+</form>
+<p class = "ot">Ответ: <span id="square_sol"> </span></p>
+    </div>
+
+</body>
+</html>
+<!--<input type="submit" value="посчитать">-->

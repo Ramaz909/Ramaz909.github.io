@@ -1,0 +1,66 @@
+.center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+body {
+    background-color: rgba(255, 238, 1, 0.63);
+    line-height: 1.0;
+}
+
+p.tit {
+    font-style: normal;
+    font-size: 40px;
+}
+p.ot {
+    font-style: normal;
+    font-size: 28px;
+    font-weight: bold;
+}
+p.a {
+    font-style: oblique;
+    font-size: 22px;
+ 
+    
+
+
+}
+.header {
+    width: 840px;
+    margin: auto;
+    border: 3px solid rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap; /*перенос строки */
+    justify-content: flex-start; /*прижимает содержимое по умолчанию */
+    align-items: center; /*выравнивает элементы по центру на вертикальной */
+}
+.header .headerMenu ul, a {
+    text-decoration: none; /*убрал подчеркивание*/
+}
+.we a {
+    font-size: 24px;
+    border: 2px solid transparent;
+    padding: 5px 15px 5px 15px;
+    color: #000000;
+    transition: all .3s;
+}
+.header a:hover {
+    border-color: rgb(223, 100, 0);
+}
+.header_logo {
+    
+    padding-left: 55px;
+    padding-top: 5px;
+}
+.header .headerMenu ul {
+    display: flex;
+    list-style: none;
+ }
+
+.header .headerMenu ul li+li {
+    margin-left: 20px;
+}
+
+.header_phone {
+    padding-right: 40px;
+}

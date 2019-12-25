@@ -1,0 +1,98 @@
+body{
+	font-family:verdana;
+	color: ghostwhite;
+	padding: 0;
+	margin: 0;
+	background:rgba(223, 238, 9, 0.705);
+}
+
+.mass {
+    height: 84px;
+}
+
+
+/* стили для кнопок */
+input.button4 {
+    position: relative;
+    display: inline-block;
+    font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: rgb(248, 248, 248);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    text-decoration: none;
+    user-select: none;
+    padding: .3em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: #11a2db linear-gradient(#010408, #e44c06);
+    box-shadow: inset #4991f0 0 -1px 1px, inset 0 1px 1px #000000, #d80707 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+    margin-top: 50px;
+  }
+  input.button4:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  input.button4:active {
+    top: 1px;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+    margin-top: 50px;
+  }
+
+.bublcontent {
+    position: relative;
+    padding:30px;
+    color: rgb(0, 0, 0);
+    font-size:22px;
+    font-weight:bold;
+    z-index:100;
+
+}
+
+
+.header {
+    width: 870px;
+    margin: auto;
+    border: 3px solid rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap; /*перенос строки */
+    justify-content: flex-start; /*прижимает содержимое по умолчанию */
+    align-items: center; /*выравнивает элементы по центру на вертикальной */
+}
+.header .headerMenu ul, a {
+    text-decoration: none; /*убрал подчеркивание*/
+}
+.we a {
+    font-size: 24px;
+    border: 2px solid transparent;
+    padding: 5px 15px 5px 15px;
+    color: #000000;
+    transition: all .3s;
+}
+.header a:hover {
+    border-color: rgb(223, 100, 0);
+}
+.header_logo {
+    
+    padding-left: 55px;
+    padding-top: 5px;
+}
+.header .headerMenu ul {
+    display: flex;
+    list-style: none;
+ }
+
+.header .headerMenu ul li+li {
+    margin-left: 20px;
+}
+
+.header_phone {
+    padding-right: 40px;
+}
